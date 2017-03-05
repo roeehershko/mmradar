@@ -12,3 +12,47 @@ header h1 {
     line-height: 100px;
     font-weight: 400;
 }
+
+h2.home-header {
+    line-height: 90px;
+    text-align: center;
+    margin: 0;
+}
+
+.review-box {
+    background-size: cover;
+    background-color: #fff;
+    color: #4c4c4c;
+}
+
+.review-box h3 {
+    color: #4c4c4c;
+    font-size: 20px;
+}
+
+.review-box .review-box-text {
+    padding: 0 20px;
+}
+.review-box .review-box-img {
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.review-box .btn-review-footer {
+    width: 100%;
+    background: #eeeeef;
+    border-radius: 0;
+    color: #000;
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 20px;
+    height: auto;
+    margin: 0;
+    text-transform: none;
+}
+
+.review-box {
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.1);
+}

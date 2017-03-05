@@ -1,6 +1,13 @@
 body {
     font-family: Lato;
     background-color: #e3e5e8;
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.navbar {
+    margin: 0;
 }
 
 .navbar-inverse {
@@ -38,7 +45,6 @@ body {
 header {
     min-height: 350px;
     width: 100%;
-    margin-top: 67px;
     background-image: url(../img/home-bg.jpg);
 }
 
@@ -86,9 +92,40 @@ header {
 .btn-round:visited {
     outline: none !important;
     color: #fff;
+    background: none;
 }
 
 .btn-round:hover {
     background-color: rgba(35,205,183,0.3);
     color: #fff;
+}
+
+
+.tag {
+    position: absolute;
+    color: #fff;
+    padding: 5px 29px;
+    border-radius: 30px;
+    bottom: -19px;
+    left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.tag.verified-tag {
+    background: #35c03f;
+}
+
+.tag.scam-tag {
+    background: #f40d44;
+}
+
+.tag.best-tag {
+    background: #eec60b;
+}
+
+.mui-btn.btn-round .mui-btn__ripple-container {
+    border-radius: 25px;
 }
