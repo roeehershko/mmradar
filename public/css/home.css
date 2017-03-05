@@ -44,15 +44,44 @@ h2.home-header {
     width: 100%;
     background: #eeeeef;
     border-radius: 0;
-    color: #000;
+    color: #545454;
     font-size: 18px;
     line-height: 64px;
     padding: 0 20px;
     height: auto;
     margin: 0;
     text-transform: none;
+    transition: all 0.3s;
+}
+
+.review-box .btn-review-footer:hover {
+    background: #23cdb7;
+    color: #fff;
+}
+
+.review-box .btn-review-footer:hover .fa {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.review-box .btn-review-footer .fa {
+    display: block;
+    line-height: 34px;
+    font-size: 40px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #545454;
+    text-align: center;
+    margin-top: 13px;
+    padding-left: 6px;
+    padding-top: 0px;
+    transition: all 0.3s;
+    color: #545454;
+
 }
 
 .review-box {
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.1);
 }
+

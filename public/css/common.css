@@ -49,9 +49,6 @@ header {
 }
 
 @media (min-width: 768px) {
-    .navbar {
-        border-bottom: 3px solid #23cdb7;
-    }
     .container > .navbar-header {
         position: absolute;
         width: 300px;
@@ -126,6 +123,44 @@ header {
     background: #eec60b;
 }
 
+
+.block-tag {
+    width: 140px;
+    text-align: center;
+    padding: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+    line-height: 23px;
+}
+
+.block-tag-verified {
+    background: #35c03f;
+}
+
+.block-tag-sm {
+    font-size: 11px;
+    width: 67px;
+    line-height: 11px;
+    float: left;
+    margin-top: 20px;
+}
+
+.block-tag-scam{
+    background: #f40d44;
+}
+
+.block-tag-best{
+    background: #eec60b;
+}
+
 .mui-btn.btn-round .mui-btn__ripple-container {
     border-radius: 25px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
 }

@@ -7,8 +7,8 @@
         var offer = $el.data('review');
 
         $el.find('.review-box-img').css({
-            'background-image': 'url(public/img/reviews/' + offer + '/thumb.jpg)'
+            'background-image': 'url(img/reviews/' + offer + '/thumb.jpg)'
         });
-    })
+    });
 }());
 

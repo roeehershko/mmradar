@@ -17,6 +17,13 @@ app.get('/', function(req, res){
     });
 });
 
+app.get('/post', function(req, res){
+
+    res.render('post.twig', {
+        what_hello : "Hello bbb"
+    });
+});
+
 
 
 app.listen(3000);
