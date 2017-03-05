@@ -117,4 +117,27 @@ ul.recent-mm-list li a:hover .fa {
 
 }
 
+.sidebar-widget.help-us-grow {
+    font-size: 13pt;
+    font-weight: 300;
+}
 
+.sidebar-widget.help-us-grow p {
+    margin-top: 9px;
+    font-size: 13pt;
+}
+
+.sidebar-widget.help-us-grow a {
+    color: #000;
+}
+
+.sidebar-widget.help-us-grow a .fa {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    margin-left: 7px;
+    font-size: 20px;
+    line-height: 18px;
+}
