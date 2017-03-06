@@ -41,69 +41,61 @@
     <div class="row">
         <div class="col-md-8">
             <div class="post-container">
-                {% if review.verified == 1 %}
-                    <div class="block-tag block-tag-verified block-tag-lg">VERIFIED</div>
-                {% else %}
-                    <div class="block-tag block-tag-scam block-tag-lg">SCAM</div>
-                {% endif %}
-                <h1>{{ review.title }} Review</h1>
+                <div class="block-tag block-tag-verified block-tag-lg">VERIFIED</div>
+                <h1>1 Day Daily Profit Review</h1>
                 <div class="post-body">
+                    <h2>My Experience With 1 Day Daily Profit </h2>
                     <div class="post-content">
-                       {{ review.content }}
+                        <p>
+                            I have heard about this money making method few months ago’
+                            after receiving mixed feedback I decided that I want to try it
+                        </p>
+                        <p>
+                            Lets get the point... <strong>1K day profit is NOT a scam</strong>
+                            I was able to make a nice profit out of it and it’s really working money making method
+                        </p>
+                        <img class="post-img" src="img/reviews/1kdailyprofit/post1.jpg" alt="">
+                        <p>
+                            <strong>start at neutral and after few days going FULL GAS</strong> <br>
+                            at the first few days I didn’t made any profit at all, damm I was even losing...
+                            i was about to make a spam review about this offer, but then Damn it went high!
+                            i was breaking even really quick and then starting to make actual profit
+                            i am so suprised about how good this offer worked, once the best i ever seen
+                            if not the best.
+                        </p>
+                        <img class="post-img" src="img/reviews/1kdailyprofit/post3.jpg" alt="">
+                        <p>
+                            <strong>Conclusion</strong> <br>
+                            1K Daily profit is approved money making method. <br>
+                            It may take some time and you may need to make initial investment, <br>
+                            but the bottom line is that its possible to make daily income from this offer.
+                        </p>
                     </div>
                     <h2>Overall Review Results</h2>
-
                     <div class="summurized">
                         <div class="summ-box">
-                            {% if reviewResults[0] == 1 %}
-                                <h3> <span class="fa fa-check"></span> Security</h3>
-                                Deposit is very safe and secured trough HTTP which is the most
-                                secured way of buying online
-                            {% elseif reviewResults[0] == 0 %}
-                                <h3> <span class="fa fa-times"></span> Security</h3>
-                                Deposit and website is not safe, your payment info can easly
-                                be stolen and used, this risk should never be taken even if the offer
-                                has proven money making method
-                            {% endif %}
-
+                            <h3> <span class="fa fa-check"></span> Depositing</h3>
+                            Deposit is very safe and secured trough HTTP which is the most
+                            secured way of buying online
                         </div>
                     </div>
                     <div class="summurized">
                         <div class="summ-box">
-                            {% if reviewResults[1] == 1 %}
-                                <h3> <span class="fa fa-check"></span> Money Making</h3>
-                                Money Making is real, i was able to make a profit out of it.
-                                The amount of profit is above 25% of my initial investment within 14 days
-                            {% elseif reviewResults[1] == 0 %}
-                                <h3> <span class="fa fa-times"></span> Money Making</h3>
-                                You wont make a penny out of it.. you will also high likely to lose
-                                all your initial investment. {{ review.title }} is absolute scam
-                            {% endif %}
+                            <h3> <span class="fa fa-check"></span> Money Making</h3>
+                            Money Making is real, i was able to make a profit out of it.
+                            The amount of profit is above 25% of my initial investment within 14 days
                         </div>
                     </div>
                     <div class="summurized">
                         <div class="summ-box">
-
-                            {% if reviewResults[2] == 1 %}
-                                <h3> <span class="fa fa-check"></span> Withdrawal</h3>
-                                Withdrawal is legit, 1K Daily Profit transfer the money within 14 days, you receive
-                                the money directly to your bank, 1K Daily Profit also support multiple money transfer methods
-                            {% elseif reviewResults[2] == 0 %}
-                                <h3> <span class="fa fa-times"></span> Withdrawal</h3>
-                                Withdrawal is possible tough its really hard, they will call you and try
-                                to convince you not to withdrawal, they will try to offer you a free money bonus
-                                that you eventually will lose anyway.
-                            {% endif %}
+                            <h3> <span class="fa fa-check"></span> Withdrawal</h3>
+                            Withdrawal is legit, 1K Daily Profit transfer the money within 14 days, you receive
+                            the money directly to your bank, 1K Daily Profit also support multiple money transfer methods
                         </div>
                     </div>
-                    {% if review.verified == 1 %}
-                        <div class="link text-center">
-                            <a href="../post#" class="mui-btn mui-btn--primary mui-btn--large">Try {{ review.title }}</a>
-                        </div>
-                    {% else %}
-                        <h3 class="text-center">We do not offer links to scams, <br> and we highly recommend you not to invest in such websites</h3>
-                    {% endif %}
-
+                    <div class="link text-center">
+                        <a href="../post#" class="mui-btn mui-btn--primary mui-btn--large">Try 1K Daily Profits</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,7 +121,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="sidebar-widget top-methods">
                     <h3 class="sidebar-header-sm">Recent Money Making Methods</h3>
                     <ul class="recent-mm-list">
