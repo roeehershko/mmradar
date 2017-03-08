@@ -15,6 +15,7 @@ var connection = mysql.createConnection({
     database : 'mmradar'
 });
 
+
 connection.connect();
 
 app.set('view engine', 'twig');
