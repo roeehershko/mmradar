@@ -56,83 +56,33 @@
             <div class="col-xs-12">
                 <h2 class="home-header">Top <strong>Money Making</strong> Reviews</h2>
             </div>
-            <div class="col-xs-4">
-                <div class="review-box" data-review="1kdailyprofit">
-                    <div class="review-box-img">
-                        <div class="tag best-tag">BEST OFFER</div>
-                    </div>
-                    <div class="review-box-text">
-                        <h3>1K Daily Profit <br>
-                            <small class="review-box-date">3 March 2017</small>
-                        </h3>
-                        <p>
-                            Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet
-                        </p>
-                    </div>
-                    <div class="review-box-footer">
-                        <a href="/post" class="btn btn-review-footer mui-btn mui-btn--primary">
-                            <div class="pull-left">View Details</div>
-                            <div class="pull-right">
-                                <span class="fa fa-angle-right"></span>
+            {% for post in posts %}
+                {% if post.verified == 1 %}
+                    <div class="col-xs-4" style="margin-top: 10px;">
+                        <div class="review-box" data-review="1kdailyprofit">
+                            <div class="review-box-img">
+                                <div class="tag verified-tag">VERIFIED</div>
                             </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="review-box" data-review="1kdailyprofit">
-                    <div class="review-box-img">
-                        <div class="tag verified-tag">VERIFIED</div>
-                    </div>
-                    <div class="review-box-text">
-                        <h3>1K Daily Profit <br>
-                            <small class="review-box-date">3 March 2017</small>
-                        </h3>
-                        <p>
-                            Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet
-                        </p>
-                    </div>
-                    <div class="review-box-footer">
-                        <a href="/post" class="btn btn-review-footer mui-btn mui-btn--primary">
-                            <div class="pull-left">View Details</div>
-                            <div class="pull-right">
-                                <span class="fa fa-angle-right"></span>
+                            <div class="review-box-text">
+                                <h3>{{ post.title }}<br>
+                                    <small class="review-box-date">3 March 2017</small>
+                                </h3>
+                                <p style="min-height: 120px">
+                                    {{ post.short_content }}
+                                </p>
                             </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-xs-4">
-                <div class="review-box" data-review="1kdailyprofit">
-                    <div class="review-box-img">
-                        <div class="tag verified-tag">VERIFIED</div>
-                    </div>
-                    <div class="review-box-text">
-                        <h3>1K Daily Profit <br>
-                            <small class="review-box-date">3 March 2017</small>
-                        </h3>
-                        <p>
-                            Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet
-                        </p>
-                    </div>
-                    <div class="review-box-footer">
-                        <a href="/post" class="btn btn-review-footer mui-btn mui-btn--primary">
-                            <div class="pull-left">View Details</div>
-                            <div class="pull-right">
-                                <span class="fa fa-angle-right"></span>
+                            <div class="review-box-footer">
+                                <a href="/reviews/{{ post.id }}" class="btn btn-review-footer mui-btn mui-btn--primary">
+                                    <div class="pull-left">View Details</div>
+                                    <div class="pull-right">
+                                        <span class="fa fa-angle-right"></span>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-
-            </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -142,83 +92,34 @@
             <div class="col-xs-12">
                 <h2 class="home-header">Scams <strong>Money Making</strong> Reviews</h2>
             </div>
-            <div class="col-xs-4">
-                <div class="review-box" data-review="1kdailyprofit">
-                    <div class="review-box-img">
-                        <div class="tag scam-tag">SCAM</div>
-                    </div>
-                    <div class="review-box-text">
-                        <h3>1K Daily Profit <br>
-                            <small class="review-box-date">3 March 2017</small>
-                        </h3>
-                        <p>
-                            Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet
-                        </p>
-                    </div>
-                    <div class="review-box-footer">
-                        <a class="btn btn-review-footer mui-btn mui-btn--primary">
-                            <div class="pull-left">View Details</div>
-                            <div class="pull-right">
-                                <span class="fa fa-angle-right"></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="review-box" data-review="1kdailyprofit">
-                    <div class="review-box-img">
-                        <div class="tag scam-tag">SCAM</div>
-                    </div>
-                    <div class="review-box-text">
-                        <h3>1K Daily Profit <br>
-                            <small class="review-box-date">3 March 2017</small>
-                        </h3>
-                        <p>
-                            Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet
-                        </p>
-                    </div>
-                    <div class="review-box-footer">
-                        <a class="btn btn-review-footer mui-btn mui-btn--primary">
-                            <div class="pull-left">View Details</div>
-                            <div class="pull-right">
-                                <span class="fa fa-angle-right"></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            {% for post in posts %}
+                {% if post.verified == 0 %}
+                    <div class="col-xs-4" style="margin-top: 10px;">
+                        <div class="review-box" data-review="1kdailyprofit">
+                            <div class="review-box-img">
+                                <div class="tag scam-tag">SCAM</div>
 
-            </div>
-            <div class="col-xs-4">
-                <div class="review-box" data-review="1kdailyprofit">
-                    <div class="review-box-img">
-                        <div class="tag scam-tag">SCAM</div>
-                    </div>
-                    <div class="review-box-text">
-                        <h3>1K Daily Profit <br>
-                            <small class="review-box-date">3 March 2017</small>
-                        </h3>
-                        <p>
-                            Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet
-                        </p>
-                    </div>
-                    <div class="review-box-footer">
-                        <a class="btn btn-review-footer mui-btn mui-btn--primary">
-                            <div class="pull-left">View Details</div>
-                            <div class="pull-right">
-                                <span class="fa fa-angle-right"></span>
                             </div>
-                        </a>
+                            <div class="review-box-text">
+                                <h3>{{ post.title }}<br>
+                                    <small class="review-box-date">3 March 2017</small>
+                                </h3>
+                                <p style="min-height: 120px">
+                                    {{ post.short_content }}
+                                </p>
+                            </div>
+                            <div class="review-box-footer">
+                                <a href="/reviews/{{ post.id }}" class="btn btn-review-footer mui-btn mui-btn--primary">
+                                    <div class="pull-left">View Details</div>
+                                    <div class="pull-right">
+                                        <span class="fa fa-angle-right"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-            </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>

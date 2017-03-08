@@ -23,10 +23,15 @@ app.use("/js", express.static(__dirname + '/public/js'));
 app.use("/img", express.static(__dirname + '/public/img'));
 app.use("/fonts", express.static(__dirname + '/public/fonts'));
 
+var posts = null;
+connection.query('SELECT reviews.*, offers.verified, offers.results FROM reviews INNER JOIN offers ON offers.review_id = reviews.id', [], function (err, data) {
+    posts = data;
+});
+
 app.get('/', function(req, res){
 
     res.render('homepage.twig', {
-        what_hello : "Hello bbb"
+        posts : posts
     });
 });
 
