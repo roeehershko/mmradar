@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 var connection = mysql.createConnection({
     host     : 'localhost',
-    user     : 'remote',
-    password : 'Rhershko1@',
+    user     : 'test',
+    password : 'Jupt7ZujcnMDbHpx',
     database : 'mmradar'
 });
 
@@ -33,6 +33,7 @@ app.use("/fonts", express.static(__dirname + '/public/fonts'));
 
 var posts = null;
 connection.query('SELECT reviews.*, offers.verified, offers.link, offers.results FROM reviews INNER JOIN offers ON offers.review_id = reviews.id', [], function (err, data) {
+console.log(data);
     posts = data;
 });
 
