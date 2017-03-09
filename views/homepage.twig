@@ -26,11 +26,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
                 <li><a href="#about">Reviews</a></li>
                 <li><a href="#contact">Industries</a></li>
-                <li><a href="#contact">F.A.Q</a></li>
-                <li><a href="#contact">Subscribe</a></li>
+                <li><a href="#contact">About</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -45,11 +43,48 @@
                     we are testing all the money making methods online and deliver our results to you! <br>
                     this service is 100% free and will always be.
                 </p>
-                <button type="button" class="btn btn-round mui-btn mui-btn--primary">Subscribe to our newsletter</button>
+                <button data-toggle="modal" data-target="#subscribeModal" type="button" class="btn btn-round mui-btn mui-btn--primary">Subscribe to our newsletter</button>
             </div>
         </div>
     </div>
 </header>
+<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Subscribe To MMRadar</h4>
+            </div>
+            <div class="modal-body">
+                <form id="sub-form">
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Email:</label>
+                        <input type="email" name="email" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Name:</label>
+                        <input type="text" name="name" class="form-control" id="recipient-name">
+                    </div>
+                    <p>
+                        You can always remove your subscription by pressing the "unsubscribe" button
+                        on our emails, we will never spam your email and we will never share your email with others
+                        your safe with us.
+                    </p>
+                </form>
+                <div class="hidden">
+                    <h3>Welcome to MMRadar Group!</h3>
+                    <p>
+                        Thanks for joining our small group!
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="subscribe-btn" type="button" class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
 <section class="top-reviews">
     <div class="container">
         <div class="row">
@@ -59,7 +94,7 @@
             {% for post in posts %}
                 {% if post.verified == 1 %}
                     <div class="col-xs-4" style="margin-top: 10px;">
-                        <div class="review-box" data-review="1kdailyprofit">
+                        <div class="review-box" data-review="{{ post.slug }}">
                             <div class="review-box-img">
                                 <div class="tag verified-tag">VERIFIED</div>
                             </div>
@@ -95,7 +130,7 @@
             {% for post in posts %}
                 {% if post.verified == 0 %}
                     <div class="col-xs-4" style="margin-top: 10px;">
-                        <div class="review-box" data-review="1kdailyprofit">
+                        <div class="review-box" data-review="{{ post.slug }}">
                             <div class="review-box-img">
                                 <div class="tag scam-tag">SCAM</div>
 
@@ -125,6 +160,7 @@
 </section>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="//cdn.muicss.com/mui-0.9.9/js/mui.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
 <script src="js/home.js"></script>
 </body>
 </html>
