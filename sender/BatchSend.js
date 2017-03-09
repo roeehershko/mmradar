@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
     database : 'mmradar'
 });
 
-connection.query('SELECT * FROM gr_leads', function (err, res) {
+connection.query('SELECT * FROM gr_leads WHERE used = 0', function (err, res) {
 
     async.eachLimit(res, 1, function (user, cb) {
 
