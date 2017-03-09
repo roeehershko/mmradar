@@ -94,6 +94,11 @@ app.get('/reviews/:postId', function(req, res){
 
 app.get('/unsubscribe', function(req, res){
 
+    connection.query('UPDATE subscribers SET subscribed = 0 WHERE email = ?', [req.body.e], function (err, res) {
+        console.log(err, res);
+    });
+
+
     res.render('unsubscribe.twig', {
         what_hello : "Hello bbb"
     });
